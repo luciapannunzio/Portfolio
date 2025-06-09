@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  font-family: "Formula", "NeueMontreal", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 248, 241);
+  letter-spacing: 0.02rem;
+}
+
+@font-face {
+  font-family: "Formula";
+  src: url("/assets/fonts/formula/PPFormula-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("/assets/fonts/neue-montreal/PPNeueMontreal-Medium.woff") format("woff");
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333;
+}
+
+.swiper-pagination-bullet {
+  background: #999;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #333;
+  opacity: 1;
+}
+
+.profile {
+  width: 20rem;
+  height: 20rem;
+}
+
+.arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.separator {
+  position: relative;
+  margin: 0 16px; /* espacio alrededor */
+}
+
+.separator::before {
+  content: "|";
+  color: #999;
+}
