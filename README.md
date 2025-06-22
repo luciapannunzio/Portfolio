@@ -1,12 +1,81 @@
-# React + Vite
+# PORTFOLIO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<img width="1183" alt="Screenshot 2025-06-22 at 17 48 18" src="https://github.com/user-attachments/assets/c1965417-46f0-4e88-9cf8-39ba889716d4" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+  
+  
+  
+  * * *
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+**Navigation**
+ - About Project
+    - Description
+    - Developed With
+ - Contact
+    - Mail
+    - GitHub  
+    - LinkedIn
+ - Used Tools
+    - Fonts
+    - Design
+    - Icons
+    - Colors
+
+
+* * *
+
+
+**About Project**
+ - Description
+*Personal portfolio to showcase my work*
+
+* * *
+
+
+**Developed With**
+ - [x] HTML5
+ - [x] CSS3
+ - [ ] SASS
+ - [ ] SCSS
+ - [x] JavaScript
+ - [ ] TypeScript
+ - [x] React
+ - [ ] Vue
+ - [ ] Vuex 
+ - [ ] Bootstrap
+ - [x] npm
+ - [x] Dom
+ - [x] Taildwind
+ - [ ] json server
+
+ 
+ * * *
+ 
+ 
+**Contact**
+
+Mail: [luciapannunzio](https://mail.google.com/mail/u/0/#inbox)
+
+GitHub: [luciapannunzio](https://github.com/luciapannunzio/)
+
+LinkedIn: [luciapannunziovanderwedden](https://www.linkedin.com/in/luciapannunziovanderwedden/)
+
+
+* * *
+
+
+**Used Tools**
+- icons
+- npm
+- Google Fonts
+- Visual Studio Code
+
+
+* * *
+
+
+
+Made by Lucia Pannunzio (✿◠‿◠✿)
