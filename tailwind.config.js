@@ -1,14 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ['./index.html', './src/**/*.{js,jsx}'],
-    theme: {
-      extend: {
-        fontFamily: {
-          formula: ['Formula', 'sans-serif'],
-          neuemontreal: ['NeueMontreal', 'sans-serif'],
-        },
+  content: [
+    './index.html',
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        formula: ['Formula', 'sans-serif'],
+        neue: ['NeueMontreal', 'sans-serif'],
       },
+      colors: {
+        background: 'rgb(255, 248, 241)',
+      }
     },
-    plugins: [],
-  }
-  
+  },
+  plugins: [],
+}

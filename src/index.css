@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text-color: rgb(0, 0, 0);
+  --separator-color: rgb(153, 153, 153);
+  --background-color: rgb(255, 248, 241);
+  --gray-700-color: rgb(75, 85, 99);
+}
+
 * {
   padding: 0;
   font-family: "Formula", "NeueMontreal", sans-serif;
 }
 
 body {
-  background-color: rgb(255, 248, 241);
+  min-height: 100vh;
+  background-color: var(--background-color);
   letter-spacing: 0.02rem;
 }
 
@@ -22,46 +30,76 @@ body {
   src: url("/assets/fonts/neue-montreal/PPNeueMontreal-Medium.woff") format("woff");
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #333;
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.swiper-pagination-bullet {
-  background: #999;
-  opacity: 0.6;
+.header-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.swiper-pagination-bullet-active {
-  background: #333;
-  opacity: 1;
+.header-title {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 0.75rem;
 }
 
-.profile {
-  width: 20rem;
-  height: 20rem;
-}
-
-.arrow {
-  width: 3rem;
-  height: 3rem;
+.about {
+  text-align: center;
+  margin: 4rem 0.4rem;
 }
 
 a {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
+  cursor: url("/assets/photos/circulo.svg") 12 12, pointer;
 }
 
 a:visited {
-  color: black;
+  color: var(--text-color);
+  cursor: url("/assets/photos/circulo.svg") 12 12, pointer;
+}
+
+a:hover {
+  color: var(--gray-700-color);
+}
+
+.project-link {
+  color: var(--text-color);
+  text-decoration: underline;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  display: inline-block;
+  cursor: url("/assets/photos/circulo.svg") 12 12, pointer;
+}
+
+.swiper-slide {
+  cursor: url("/assets/photos/circulo.svg") 12 12, pointer;
+}
+
+.swiper-slide a.text-black {
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 8rem;
 }
 
 .separator {
   position: relative;
-  margin: 0 16px; /* espacio alrededor */
+  margin: 0 16px;
 }
 
 .separator::before {
   content: "|";
-  color: #999;
+  color: var(--separator-color);
 }
