@@ -18,6 +18,8 @@ body {
   min-height: 100vh;
   background-color: var(--background-color);
   letter-spacing: 0.02rem;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 @font-face {
@@ -31,31 +33,52 @@ body {
 }
 
 .portfolio-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
+  padding: 1rem;
   box-sizing: border-box;
   width: 100%;
+}
+
+
+@media (min-width: 640px) {
+  .custom-header-responsive {
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  .custom-header-title-spacing {
+    margin-left: 2rem; 
+    margin-top: 0; 
+  }
 }
 
 .header-name {
   font-size: 1.5rem;
   font-weight: bold;
-  white-space: nowrap;
   flex-shrink: 0;
 }
 
 .header-title {
+  margin-top: 1.2rem;
   font-size: 1.5rem;
-  white-space: nowrap;
   flex-shrink: 0;
-  margin-left: 0.75rem;
 }
 
 .about {
   text-align: center;
-  margin: 4rem 0.4rem;
+  margin: 1.5rem auto 0;
+  max-width: 65rem;
+}
+
+.custom-flower-icon {
+  display: flex;
+  justify-content: center; 
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.custom-flower-icon .small-flower {
+  width: 2rem; 
+  height: 2rem; 
 }
 
 a {
@@ -77,8 +100,9 @@ a:hover {
   color: var(--text-color);
   text-decoration: underline;
   font-size: 1rem;
-  margin-top: 0.25rem;
   display: inline-block;
+  margin-top: 1rem;   
+  margin-bottom: 2rem;
   cursor: url("/assets/photos/circulo.svg") 12 12, pointer;
 }
 
@@ -91,7 +115,7 @@ a:hover {
 }
 
 .footer {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .separator {

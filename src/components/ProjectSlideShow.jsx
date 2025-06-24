@@ -20,8 +20,6 @@ export default function ProjectSlideShow() {
   const swiperRef = useRef(null);
 
   const handleImageClick = (e) => {
-
-    // Prevents the event from propagating if the click was on the "Visit project" link. Important to prevent the Swiper from triggering when the link is clicked.
     if (e.target.closest('a')) {
       return;
     }
@@ -41,7 +39,7 @@ export default function ProjectSlideShow() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-[70vh] px-2">
+    <div className="flex justify-center items-center px-2">
       <Swiper
         loop
         spaceBetween={16}
