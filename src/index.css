@@ -66,7 +66,7 @@ body {
 .about {
   text-align: center;
   margin: 1.5rem auto 0;
-  max-width: 65rem;
+  max-width: 80rem;
 }
 
 .custom-flower-icon {
@@ -79,6 +79,16 @@ body {
 .custom-flower-icon .small-flower {
   width: 2rem; 
   height: 2rem; 
+  animation: rotateFlower 4s linear infinite; 
+}
+
+@keyframes rotateFlower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 a {
@@ -96,12 +106,23 @@ a:hover {
   color: var(--gray-700-color);
 }
 
+.image-container {
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-link {
   color: var(--text-color);
   text-decoration: underline;
   font-size: 1rem;
   display: inline-block;
-  margin-top: 1rem;   
+  margin-top: 0.5rem;   
   margin-bottom: 2rem;
   cursor: url("/assets/photos/circulo.svg") 12 12, pointer;
 }

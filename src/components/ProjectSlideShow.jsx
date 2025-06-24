@@ -4,17 +4,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const projects = [
-  { title: "Designer Portfolio", description: "Portfolio of Designer & Art Director Lee Chapdaniel, built on WordPress", image: "assets/photos/image-1.png", url: "https://leechapdaniel.com/" },
+  { title: "Lee Chapdaniel's website", description: "Portfolio of Designer & Art Director Lee Chapdaniel, built on WordPress", image: "assets/photos/image-1.png", url: "https://leechapdaniel.com/" },
   { title: "Recycling App", description: "An app that teaches how to recycle garbage in Berlin, made with Vue.JS", image: "assets/photos/image-2.png", url: "https://bsr-app.onrender.com/" },
   { title: "Magazine Landing Page", description: "Landing page of Revue Neuf Magazine", image: "assets/photos/image-3.png", url: "https://luciapannunzio.github.io/Magazine-landing-page/" },
-  { title: "Photographer Portfolio", description: "Working in progress, portfolio of photographer Mirella Demarco, built on React.JS", image: "assets/photos/image-4.png" },
+  { title: "Mirella Demarco's website", description: "Portfolio of photographer Mirella Demarco, built on React.JS (work in progress)", image: "assets/photos/image-4.png" },
   { title: "Security Detections List", description: "Search and filter of security detections", image: "assets/photos/image-5.png", url: "https://security-detections.vercel.app/" },
-  { title: "To-do List", description: "A webpage using Vue.JS, allowing users to create their to-do list.", image: "assets/photos/image-6.png", url: "https://to-do-list-vue-alpha.vercel.app/" },
-  { title: "Weather App", description: " A webpage using React.JS to search for the forecast anywhere in the world.", image: "assets/photos/image-7.png", url: "https://weather-app-lp.vercel.app/" },
-  { title: "Quote Generator", description: "A webpage using HTML, SCSS and JavaScript which generates quotes from LGBTQIA+ writers.", image: "assets/photos/image-8.png", url: "https://luciapannunzio.github.io/Random-Quotations-LGBTQIA/" },
-  { title: "Calendar of events in Berlin", description: "A local calendar of DIY events in Berlin, using React.JS and MongoDB", image: "assets/photos/image-9.png", url: "https://cyberherd.onrender.com/" },
-  { title: "Coolmat", description: "Korean restaurant landing page made with WordPress and PHP.", image: "assets/photos/image-10.png", url: "https://github.com/luciapannunzio/Coolmat-Wordpress" },
-  { title: "CSD-BERLIN", description: "Landing page for CSD Berlin Pride truck for DCI (Digital Career Institute) to drive conversion through QR code. ", image: "assets/photos/image-11.png", url: "https://github.com/luciapannunzio/CSD-BERLIN" },
+  { title: "To-do List", description: "A webpage using Vue.JS, allowing users to create their to-do list", image: "assets/photos/image-6.png", url: "https://to-do-list-vue-alpha.vercel.app/" },
+  { title: "Weather App", description: " A webpage using React.JS to search for the forecast anywhere in the world", image: "assets/photos/image-7.png", url: "https://weather-app-lp.vercel.app/" },
+  { title: "Quote Generator", description: "A webpage using HTML, SCSS and JavaScript which generates quotes from LGBTQIA+ writers", image: "assets/photos/image-8.png", url: "https://luciapannunzio.github.io/Random-Quotations-LGBTQIA/" },
+  { title: "Berlin Spaß Calendar", description: "A local calendar of DIY cultural events in Berlin, using React.JS and MongoDB", image: "assets/photos/image-9.png", url: "https://cyberherd.onrender.com/" },
+  { title: "Coolmat", description: "Website for Korean restaurant Coolmat, made with WordPress and PHP", image: "assets/photos/image-10.png", url: "https://github.com/luciapannunzio/Coolmat-Wordpress" },
+  { title: "CSD-BERLIN", description: "Landing page for CSD Berlin Pride truck for DCI (Digital Career Institute) to drive conversion through QR code", image: "assets/photos/image-11.png", url: "https://github.com/luciapannunzio/CSD-BERLIN" },
 ];
 export default function ProjectSlideShow() {
   const swiperRef = useRef(null);
@@ -57,7 +57,7 @@ export default function ProjectSlideShow() {
             onClick={handleImageClick}
           >
             <div className="flex flex-col items-center">
-              <div className="w-full h-64 bg-white rounded-xl shadow-md overflow-hidden flex items-center justify-center">
+              <div className="w-full h-64 bg-white rounded-xl shadow-md overflow-hidden flex items-center justify-center image-container">
                 <img
                   src={project.image}
                   alt={project.title}
